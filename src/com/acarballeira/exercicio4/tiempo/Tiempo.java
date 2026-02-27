@@ -1,4 +1,4 @@
-package com.acarballeira.boletin4.tiempo;
+package com.acarballeira.exercicio4.tiempo;
 
 public class Tiempo { // ← Mayúscula
 

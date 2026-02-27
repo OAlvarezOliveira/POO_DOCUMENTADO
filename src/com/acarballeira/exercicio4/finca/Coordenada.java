@@ -1,4 +1,4 @@
-package com.acarballeira.boletin4.finca;
+package com.acarballeira.exercicio4.finca;
 
 public class Coordenada {
 

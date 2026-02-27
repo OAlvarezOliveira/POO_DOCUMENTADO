@@ -1,4 +1,4 @@
-package com.acarballeira.boletin4.rectangulo;
+package com.acarballeira.exercicio4.rectangulo;
 
 public class Rectangulo {
 

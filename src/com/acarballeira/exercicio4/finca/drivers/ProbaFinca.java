@@ -1,9 +1,9 @@
-package com.acarballeira.boletin4.finca.drivers;
+package com.acarballeira.exercicio4.finca.drivers;
 
-import com.acarballeira.boletin4.finca.Coordenada;
-import com.acarballeira.boletin4.finca.Finca;
-import com.acarballeira.boletin4.finca.Parcela;
-import com.acarballeira.boletin4.finca.TipoCultivo;
+import com.acarballeira.exercicio4.finca.Coordenada;
+import com.acarballeira.exercicio4.finca.Finca;
+import com.acarballeira.exercicio4.finca.Parcela;
+import com.acarballeira.exercicio4.finca.TipoCultivo;
 
 public class ProbaFinca {
 

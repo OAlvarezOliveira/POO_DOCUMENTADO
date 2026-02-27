@@ -1,7 +1,7 @@
-package com.acarballeira.boletin4.arbore;
+package com.acarballeira.exercicio4.arbore;
 import java.time.LocalDate;
 
-import com.acarballeira.boletin4.finca.Coordenada;
+import com.acarballeira.exercicio4.finca.Coordenada;
 
 public class Arbore {
 

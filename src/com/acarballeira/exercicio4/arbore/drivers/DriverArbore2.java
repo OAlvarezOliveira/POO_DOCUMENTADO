@@ -1,7 +1,7 @@
-package com.acarballeira.boletin4.arbore.drivers;
+package com.acarballeira.exercicio4.arbore.drivers;
 
-import com.acarballeira.boletin4.arbore.Arbore;
-import com.acarballeira.boletin4.arbore.TipoFolla;
+import com.acarballeira.exercicio4.arbore.Arbore;
+import com.acarballeira.exercicio4.arbore.TipoFolla;
 
 public class DriverArbore2 {
     

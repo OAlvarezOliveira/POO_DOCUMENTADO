@@ -1,10 +1,10 @@
-package com.acarballeira.boletin4.arbore.drivers;
+package com.acarballeira.exercicio4.arbore.drivers;
 
 import java.time.LocalDate;
 
-import com.acarballeira.boletin4.arbore.Arbore;
-import com.acarballeira.boletin4.arbore.TipoFolla;
-import com.acarballeira.boletin4.finca.Coordenada;
+import com.acarballeira.exercicio4.arbore.Arbore;
+import com.acarballeira.exercicio4.arbore.TipoFolla;
+import com.acarballeira.exercicio4.finca.Coordenada;
 
 public class DriverArbore8 {
 

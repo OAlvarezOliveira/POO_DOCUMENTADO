@@ -1,6 +1,6 @@
-package com.acarballeira.boletin4.tiempo.driver;
+package com.acarballeira.exercicio4.tiempo.driver;
 
-import com.acarballeira.boletin4.tiempo.Tiempo;
+import com.acarballeira.exercicio4.tiempo.Tiempo;
 
 public class PruebaTiempo {
     
