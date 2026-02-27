@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>40</y>
+      <w>210</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Arbore
+--
+- numArbores: int {static}
++ altura: double
++ anoNacemento: int
++ concello: String
++ nomeComun: String
++ nomeLatino: String
++ tipoFolla: TipoFolla
+--
++ Arbore()
++ Arbore(double, int, String, String, String, TipoFolla)
++ getNumArbores(): int {static}
++ toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>100</y>
+      <w>180</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+TipoFolla
+--
+CADUCO
+PERENNE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>140</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

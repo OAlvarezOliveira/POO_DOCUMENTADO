@@ -1,0 +1,159 @@
+EJERCICIOS TEÓRICOS PENDIENTES (9-15):
+
+
+9: Atributos de clase Alumno
+	public class Alumno {
+    private String nome;           // ✅ 
+    private String apelidos;       // ✅
+    private int dataNacemento;     // ✅ 
+    private enum sexo;             // ✅ 
+    private int curso;             // ✅ (1º DAM, 2º DAM...)
+    private String[] modulos;      // Array de módulos cursando
+    private double mediaNotas;     // Nota media
+    
+    // Otros posibles:
+    private String dni;            // Identificador único
+    private String email;          // Contacto
+    private String telefono;       // Contacto
+}
+
+Un alumno tiene nombre
+Es una característica del alumno
+Es información que necesitas almacenar y consultar
+-----------------------------------------------------------------------------------
+
+10: Propiedades y métodos de Coche
+
+Parte A: Propiedades (atributos)
+private String marca
+private String modelo
+private enum color
+private int anoFabricacion
+private int Potencia
+private enum tipoMotor
+private Extra [] Extras;
+
+Parte B: Métodos
+public void arrancar();
+public void acelerar();
+public void frenar();
+public int  getVelocidad();
+public int  getMarcha();
+public int  getNivelCombustible();
+
+Parte C: Tres instancias
+Coche coche1 = new Coche("Toyota", "Corolla", 2020, "Rojo");
+Coche coche2 = new Coche("BMW", "Serie 3", 2022, "Negro");
+Coche coche3 = new Coche("Seat", "León", 2019, "Blanco");
+
+-----------------------------------------------------------------------------------
+
+11: Clases relacionadas con una casa
+
+- Propietario
+- Planos
+- RegistroCatastral
+- Distribucion
+- Arquitecto
+- EquipoConstruccion
+- ElementoArquitectonico
+ 
+-----------------------------------------------------------------------------------
+
+12: Atributos de Vehículo y subclases
+
+Parte A: Atributos generales de Vehículo
+private Strin marca
+private String modelo
+private int anoFabricacion
+private int Potencia
+
+Parte B: Subclases y herencia
+Coche 
+Moto 
+Camion
+Autobus
+
+Parte C:¿Por qué tener subclases?
+Coche tiene 4 ruedas, Moto tiene 2
+Camión tiene capacidad de carga, Coche no
+Comparten atributos comunes, pero tienen diferencias
+
+-----------------------------------------------------------------------------------
+
+13: Atributos y métodos de Ventana (de ordenador)
+
+private int ancho
+private int alto
+private String titulo
+private enum Estado 
+private Boolean esSistema 
+
+Abrir
+Cerrar
+Minimizar
+Maximizar
+Redimensionar
+Mover
+
+
+-----------------------------------------------------------------------------------
+
+14: Diagrama agenda de contactos
+
+Axenda
+ ├─ contiene Categoria[]
+
+Categoria  
+ ├─ contiene Contacto[]
+
+Contacto (clase padre)
+ ├─ nombre, direccion, tlfFijo, tlfMovil
+ 
+Amigo (hereda de Contacto)
+ └─ atributos específicos de amigos
+ 
+Familiar (hereda de Contacto)
+ └─ atributos específicos de familiares
+ 
+
+-----------------------------------------------------------------------------------
+
+15: Interpretar diagrama UML
+
+-----------------------------------------------------------------------------------
+
+Pregunta 1: Herencia
+¿Qué clases heredan de qué?
+Dog hereda de Mammal
+Human hereda de Mammal
+Tiger hereda de Mammal
+
+Mammal hereda de LivingBeing
+Plant hereda de LivingBeing
+
+Pregunta 2: Composición/Agregación
+¿Qué clases contienen objetos de otras clases?
+
+Human contiene objetos de  Address
+Human contiene objetos de  Car
+Human contiene objetos de  Dog
+Dog contiene objetos de  Human
+
+Tiger implementa interfaz Wild
+Dog implementa interfaz  Domesticated
+
+
+Pregunta 3: Métodos
+¿Qué significa que algunos métodos estén en LivingBeing y otros en subclases?
+
+Todas las clases que heredan de LivingBeing implementan los metodos propios de  LivingBeing (de la misma o distinta forma) y ademas añaden los metodos
+necesarios para completar su funcionalidad
+
+
+
+
+
+
+
+
