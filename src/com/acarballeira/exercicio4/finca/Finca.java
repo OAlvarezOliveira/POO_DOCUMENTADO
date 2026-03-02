@@ -10,10 +10,8 @@ public class Finca {
 
 // Constructores
 	public Finca() {
-		this.parcela = null;
-		this.toponimo = null;
-		this.cultivo = null;
 		this.regadio = false;
+		this.metrosLimpos = 0;
 	}
 
 	public Finca(Parcela parcela, String toponimo, TipoCultivo cultivo, boolean regadio) {
@@ -112,7 +110,7 @@ public class Finca {
 	public String toString() {
 	    return String.format("*** FINCA *** %s\nTipo de Cultivo: %s\nRegadío: %b\nCoordenadas de referencia: %d,%d - %d,%d\nMetros Totais: %.3f\nMetros limpos: %.3f",
 	                         this.toponimo,
-	                         this.cultivo,
+	                         this.cultivo.name(),
 	                         this.regadio,
 	                         this.parcela.getPuntoRef1().getX(),
 	                         this.parcela.getPuntoRef1().getY(),

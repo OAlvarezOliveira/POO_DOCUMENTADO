@@ -74,7 +74,7 @@ public class Arbore {
 	// Versión 1: Solo nueva ubicación
 	public void trasplantar(Coordenada nuevaLocalizacion) {
 		this.localizacion = nuevaLocalizacion; // Cambiar solo la ubicación
-
+		this.fechaTrasplante = LocalDate.now();
 	}
 
 	public void trasplantar(Coordenada nuevaLocalizacion, LocalDate fecha) {
