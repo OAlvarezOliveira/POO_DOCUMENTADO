@@ -1,16 +1,6 @@
-package com.acarballeira.exercicios.clases.exercicio9;
+package com.acarballeira.exercicios.clases.exercicio9_VERSION_ARRAYLIST;
 
-import java.util.Objects;
-
-/**
- * Resolucion de la tarea 
- * Curso 2025-26
- *  @author O.Alvarez
- * @version 1.0
- *
- */
-
-public class Libro implements Comparable<Libro> {
+public class Libro implements Comparable<Libro>{
 
 	protected String titulo;
 	protected String autor;
@@ -76,20 +66,18 @@ public class Libro implements Comparable<Libro> {
 
 	@Override
 	public String toString() {
-		return String.format("\n·········· LIBRO·········· \n"
-				+ "Titulo: %s\n"
+		return String.format("\n········ LIBRO ·········\n"
+				+ "Título: %s\n"
 				+ "Autor: %s\n"
 				+ "Editorial: %s\n"
-				+ "NumPaxinas: %d\n"
-				+ "codigo: %d\n"
-				+ "\n···················· \n",
+				+ "Número de páginas: %d. Código interno: %d\n"
+				+ "·····················\n",
 				this.titulo,
 				this.autor,
 				this.editorial,
 				this.numPaxinas,
 				this.codigo);
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -99,34 +87,28 @@ public class Libro implements Comparable<Libro> {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
+		
 		Libro other = (Libro) obj;
+		
 		//return Objects.equals(autor, other.autor) && Objects.equals(titulo, other.titulo);
 		return this.autor.equals(other.autor) && this.titulo.equals(other.titulo);
-	
 	}
 
 	@Override
 	public int compareTo(Libro o) {
 		
-		Libro l=  (Libro) o;
-		
-		if(this.titulo.compareTo(l.titulo) < 0) {
-			
-			return -1;
-		} else if (this.titulo.compareTo(l.titulo) > 0) {
+		Libro l = (Libro) o;
+		if(this.titulo.compareTo(l.titulo) < 0){
+			return  -1;
+		} else if(this.titulo.compareTo(l.titulo) > 0) {
 			return 1;
-			
-		}else if (this.autor.compareTo(l.autor) < 0) {
-			return -1;
-		}
-		else if (this.autor.compareTo(l.autor) > 0) {
-			return 1;
-		}
+		} else if(this.autor.compareTo(l.autor) < 0){
+			return  -1;
+		} else if(this.autor.compareTo(l.autor) > 0){
+			return  1;
+		} 		
 		
 		return 0;
-	}	
-	
-	
-	
-}
+	}
 
+}
