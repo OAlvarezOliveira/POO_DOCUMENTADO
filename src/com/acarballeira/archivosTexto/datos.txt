@@ -1,0 +1,4 @@
+julio Mosquera;47
+Pepe Flores;36
+Julian Perez;47;1200
+Rosa Maria;18;4500
